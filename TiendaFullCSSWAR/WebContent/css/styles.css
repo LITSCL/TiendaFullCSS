@@ -1,0 +1,170 @@
+/*----Fuentes----*/
+@font-face {
+	font-family: "TrebuchetMSCustom";
+		src: url("../fonts/TrebuchetMS.ttf");
+  	font-weight: normal;
+  	font-style: normal;
+}
+
+/*----Estilos generales----*/
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: TrebuchetMSCustom; 
+}
+
+label {
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+	border-radius: 4px;
+	width: 300px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+	border: 1px solid #009688;
+	box-shadow: 0px 0px 4px #ccc;	
+}
+
+button,
+button[type="submit"],
+input[type="submit"] {
+	width: 90px;
+	height: 40px;
+	background-color: #009688;
+	border: 0px;
+	border-radius: 4px;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+	box-shadow: 1px 1px 2px black;
+}
+
+.red {
+	background: #E12828;
+}
+
+select {
+    border-radius: 4px;
+	width: 300px;
+	height: 40px;
+	border: 1px solid #ccc;
+ }
+
+a {
+	text-decoration: none;
+	color: #009688;
+}
+
+body {
+	background: url("../img/pattern.png");
+}
+
+
+table {
+	margin-top: 10px;
+}
+
+.table {
+	display: block;
+	border-collapse: collapse;
+}
+
+.table tr th {
+	background-color: #ccc;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.table tr td {
+	background-color: #F6F6F6;
+	padding: 5px;
+	border: 1px solid black;
+
+}
+
+.table tr td:last-child {
+	text-align: center;
+}
+
+.table tr td:nth-last-child(2) {
+	text-align: center;
+}
+
+.table-client tr td:last-child {
+	text-align: left;
+}
+
+.table-client tr td:nth-last-child(2) {
+	text-align: left;
+}
+
+/*----Cabecera----*/
+.header{
+	width: 100%;
+	height: 185px;
+	background-color: #FF5722;
+}
+
+.header .user {
+	text-align: right;
+	margin-right: 15px;
+}
+
+.header .no-user {
+	height: 18px;
+}
+
+.header .user a {
+	color: white;
+}
+
+.header .logo {
+	position: absolute;
+	top: 80px;
+	left: 10%;
+}
+
+
+/*----Menu de navegación----*/
+.nav {
+	height: 35px;
+	text-align: center;
+	background-color: #212121;
+}
+
+.nav ul li {
+	line-height: 35px;
+	display: inline-block;
+	margin: 0px auto;
+	border-right: 1px solid black;
+}
+
+.nav ul li:first-child {
+	border-left: 1px solid black;
+}
+
+.nav ul li a {
+	padding: 10px;
+	font-weight: bold;
+	color: white;
+	transition: all 200ms;
+}
+
+.nav ul li a:hover {
+	color: #529125;
+}
+
+

@@ -1,0 +1,58 @@
+@media (max-width: 859px) {
+	#navAdministrador {
+		height: 70px;
+	}
+	
+	#navAdministrador ul li {
+		border-right: none;
+	}
+
+	#navAdministrador ul li:first-child {
+		border-left: none;
+	}
+	
+	#navAdministrador ul li a {
+		padding: 10px;
+		font-weight: bold;
+		color: white;
+		transition: all 200ms;
+	}
+}
+
+@media (max-width: 710px) {
+	.header .user {
+		width: 100%;
+		text-align: center;
+	}
+		
+	.header .user a {
+		display: block;
+		width: 100%;
+	}	
+}
+
+@media (max-width: 661px) {
+	#tablaAdminProductos {
+		max-width: 661px;
+		overflow: scroll;
+	}
+}
+
+@media (max-width: 521px) {
+	#tablaAdminSucursales {
+		max-width: 521px;
+		overflow: scroll;
+	}
+}
+
+@media (max-width: 509px) {
+	#tablaClienteProductos {
+		max-width: 509px;
+		overflow: scroll;
+	}
+}
+
+
+
+
+	
