@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -13,7 +13,7 @@
 		<div class="logo">
 			<h1>PCFactory</h1>
 			<br/>
-			<h3>Tu partner tecnológico</h3>
+			<h3>Tu partner tecnolÃ³gico</h3>
 		</div>
 	</header>
 
@@ -28,10 +28,10 @@
 	<table>
 		<tr>
 			<td><label for="id">ID</label></td>
-			<td><input type="number" name="id" form="formulario_registro" required></td> <!-- El input pertenece al formulario con ID=formulario_registro (Tiene que ser requerido este campo para que el usuario no lo deje vacio (Si lo deja vacio, en el Server quedaría int id="")). -->
+			<td><input type="number" name="id" form="formulario_registro" required></td> <!-- El input pertenece al formulario con ID=formulario_registro (Tiene que ser requerido este campo para que el usuario no lo deje vacio (Si lo deja vacio, en el Server quedarÃ­a int id="")). -->
 		</tr>
 		<tr>
-			<td><label for="password">Contraseña</label></td>
+			<td><label for="password">ContraseÃ±a</label></td>
 			<td><input type="text" name="password" form="formulario_registro" required></td>
 		</tr>
 		<tr>

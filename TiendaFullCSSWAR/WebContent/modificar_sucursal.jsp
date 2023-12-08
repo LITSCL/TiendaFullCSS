@@ -1,10 +1,10 @@
 <%@page import="cl.inacap.tiendafullcssejb.model.Usuario"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/responsive.css" />
@@ -12,17 +12,17 @@
 <body>
 <%
 Usuario usuario = (Usuario) session.getAttribute("usuario");
-if (usuario != null && usuario.getTipo().equalsIgnoreCase("a")) { //Aca es cuando se verifica que el usuario esté autenticado.
+if (usuario != null && usuario.getTipo().equalsIgnoreCase("a")) { //Aca es cuando se verifica que el usuario estÃ© autenticado.
 %>
 	<header class="header">
 		<div class="user">
-			Has iniciado sesión correctamente administrador: <%=usuario.getNombre() + " " + usuario.getApellido()%>
-			<a href="cerrar_sesion.jsp">Cerrar sesión</a>
+			Has iniciado sesiÃ³n correctamente administrador: <%=usuario.getNombre() + " " + usuario.getApellido()%>
+			<a href="cerrar_sesion.jsp">Cerrar sesiÃ³n</a>
 		</div>
 		<div class="logo">
 			<h1>PCFactory</h1>
 			<br/>
-			<h3>Tu partner tecnológico</h3>
+			<h3>Tu partner tecnolÃ³gico</h3>
 		</div>
 	</header>
 
@@ -48,7 +48,7 @@ if (usuario != null && usuario.getTipo().equalsIgnoreCase("a")) { //Aca es cuand
 			<td><input type="text" name="nombre" form="formulario_modificar_sucursal" value="${param.nombre}" required></td>
 		</tr>
 		<tr>
-			<td><label for="direccion">Dirección</label></td>
+			<td><label for="direccion">DirecciÃ³n</label></td>
 			<td><input type="text" name="direccion" form="formulario_modificar_sucursal" value="${param.direccion}" required></td>
 		</tr>
 		<tr>
@@ -71,7 +71,7 @@ if (usuario != null && usuario.getTipo().equalsIgnoreCase("a")) { //Aca es cuand
 		<div class="logo">
 			<h1>PCFactory</h1>
 			<br/>
-			<h3>Tu partner tecnológico</h3>
+			<h3>Tu partner tecnolÃ³gico</h3>
 		</div>
 	</header>
 	<p>
@@ -86,11 +86,11 @@ if (usuario != null && usuario.getTipo().equalsIgnoreCase("a")) { //Aca es cuand
 		<div class="logo">
 			<h1>PCFactory</h1>
 			<br/>
-			<h3>Tu partner tecnológico</h3>
+			<h3>Tu partner tecnolÃ³gico</h3>
 		</div>
 	</header>
 	<p>
-		Debes iniciar sesión para poder ver el contenido <a href="index.html">Inicio</a>
+		Debes iniciar sesiÃ³n para poder ver el contenido <a href="index.html">Inicio</a>
 	</p>
 <%
 }

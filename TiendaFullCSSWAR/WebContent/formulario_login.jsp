@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -13,7 +13,7 @@
 		<div class="logo">
 			<h1>PCFactory</h1>
 			<br/>
-			<h3>Tu partner tecnológico</h3>
+			<h3>Tu partner tecnolÃ³gico</h3>
 		</div>
 	</header>
 
@@ -28,17 +28,17 @@
 	<table>
 		<tr>
 			<td><label for="id">ID</label></td>
-			<td><input type="number" name="id" form="formulario_login" required></td> <!-- El input pertenece al formulario con ID=formulario_login (Tiene que ser requerido este campo para que el usuario no lo deje vacio (Si lo deja vacio, en el Server quedaría int id="")). -->
+			<td><input type="number" name="id" form="formulario_login" required></td> <!-- El input pertenece al formulario con ID=formulario_login (Tiene que ser requerido este campo para que el usuario no lo deje vacio (Si lo deja vacio, en el Server quedarÃ­a int id="")). -->
 		</tr>
 		<tr>
-			<td><label for="password">Contraseña</label></td>
+			<td><label for="password">ContraseÃ±a</label></td>
 			<td><input type="password" name="password" form="formulario_login"></td>
 		</tr>
 		<tr>
 			<td><button type="submit" value="1" form="formulario_login" name="opcion">Ingresar</button></td>
 		</tr>
 	</table>
-	${error} <!-- Mostrando el error mediante una expresión de lenguaje. -->
+	${error} <!-- Mostrando el error mediante una expresiÃ³n de lenguaje. -->
 <%
 //Esto es otra forma de mostrar el error.
 //if (request.getAttribute("error") != null) {
