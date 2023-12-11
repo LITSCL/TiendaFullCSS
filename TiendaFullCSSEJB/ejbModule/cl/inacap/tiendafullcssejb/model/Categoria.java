@@ -20,6 +20,10 @@ public class Categoria implements Serializable {
 	private int id;
 	private String nombre;
 	private String detalle;
+
+	public Categoria() {
+		super();
+	}
 	
 	public int getId() {
 		return id;
@@ -43,10 +47,6 @@ public class Categoria implements Serializable {
 
 	public void setDetalle(String detalle) {
 		this.detalle = detalle;
-	}
-
-	public Categoria() {
-		super();
 	}
    
 }
